@@ -1,0 +1,2 @@
+rootProject.name = "EdgeApp"
+include(":app")
