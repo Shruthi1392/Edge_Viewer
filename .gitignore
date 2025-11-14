@@ -1,0 +1,74 @@
+# Gradle/Android
+.gradle/
+/build/
+**/build/
+.gradle-cache/
+
+# Local settings / IDE
+/local.properties
+*.iml
+/.idea/
+/.vscode/
+*.keystore
+*.jks
+
+# Android Studio / NDK intermediate build files
+/.externalNativeBuild/
+.cxx/
+app/.cxx/
+**/obj/
+**/libs/
+*.so
+
+# Android packaging outputs
+*.apk
+*.ap_
+*.aab
+incremental.dir
+
+# Keystore files
+*.keystore
+*.jks
+
+# Captures / screenshots / emulator images
+captures/
+*.png
+*.jpg
+*.gif
+
+# OpenCV Android SDK (large binary SDKs)
+# NOTE: If you WANT to commit the OpenCV SDK into the repository for CI/evaluation,
+# remove the following lines. Keeping the SDK out of git avoids huge binary commits.
+opencv/opencv-android-sdk/
+# If you prefer to keep header files but not the prebuilt libs, uncomment below:
+# opencv/opencv-android-sdk/sdk/native/libs/
+
+# CMake / build system cache files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Node / TypeScript / web build artifacts
+node_modules/
+web/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript compiled JS
+**/*.js
+!web/src/*.js           # if you keep source-compiled JS in repo, adjust as needed
+**/*.js.map
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Git keep (if you want to preserve empty folders)
+!.gitkeep
