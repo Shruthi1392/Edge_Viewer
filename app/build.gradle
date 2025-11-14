@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.example.edgeapp"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 1
+        versionName "0.1"
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+            version "3.22.1"
+        }
+    }
+    ndkVersion "25.1.8937393"
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+}
